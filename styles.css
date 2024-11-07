@@ -1,0 +1,210 @@
+/* General Styles */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { 
+    font-family: Arial, sans-serif; 
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    color: #f0f8ff; 
+}
+.container { 
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 15px; 
+    padding: 50px 60px; 
+    width: 500px; 
+    text-align: center; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.3s ease; 
+}
+.container:hover { 
+    transform: scale(1.05); 
+}
+
+.title { 
+    font-size: 2.5rem; 
+    margin-bottom: 20px; 
+    color: #00d1b2; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); 
+    animation: glow 1.5s ease-in-out infinite alternate; 
+}
+
+.button-container { 
+    display: flex; 
+    justify-content: space-evenly;
+    gap: 20px; 
+    margin-top: 25px; 
+}
+
+.button { 
+    text-decoration: none; 
+    margin: 25px;
+    padding: 15px 30px; 
+    font-weight: bold; 
+    font-size: 1.1rem; 
+    border-radius: 50px; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.button.animate { 
+    background: linear-gradient(135deg, #203a43, #2c5364); 
+    color: #fff; 
+    border: 2px solid #00d1b2; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+.button.animate:hover { 
+    background: #00d1b2; 
+    color: #333; 
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+}
+
+/* Success and Error Messages */
+.success { 
+    color: #00ff7f; 
+    font-weight: bold; 
+    margin-top: 20px; 
+    animation: fadeIn 1s; 
+    font-size: 1.1rem; 
+}
+
+/* Animations */
+@keyframes glow { 
+    from { text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4), 0 0 8px #00d1b2, 0 0 16px #00d1b2; } 
+    to { text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4), 0 0 12px #00d1b2, 0 0 24px #00d1b2; } 
+}
+
+@keyframes fadeIn { 
+    from { opacity: 0; } 
+    to { opacity: 1; } 
+}
+
+/* Input Fields */
+label { 
+    display: block; 
+    margin-top: 15px; 
+    font-weight: bold; 
+    color: #f0f8ff; 
+}
+
+input { 
+    width: 100%; 
+    padding: 10px; 
+    margin-top: 5px; 
+    border: 2px solid #00d1b2; 
+    border-radius: 8px; 
+    color: #fff; 
+    font-size: 1rem; 
+    transition: background-color 0.3s ease; 
+    background-color: rgba(255, 255, 255, 0.1); 
+}
+input:focus { 
+    background-color: rgba(255, 255, 255, 0.1); 
+    outline: none; 
+    border-color: #f0f8ff; 
+}
+
+.register {
+    color: #00d1b2;
+    text-decoration: none;
+}
+
+
+.logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 140px; /* Adjust the size as needed */
+    height: auto;
+}
+
+.score-board {
+    position: absolute;
+    right: 20px;
+    top: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: left;
+    color: #f0f8ff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+.score-board h2 {
+    color: #00d1b2;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.logout {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+/* Media query for screens 881px wide or smaller */
+@media (max-width: 881px) {
+    /* Hide the logo */
+    .logo {
+        display: none;
+    }
+
+    /* Reduce font size for overall readability */
+    body {
+        font-size: 13px;
+    }
+
+    /* Container padding adjustments */
+    .container {
+        padding: 15px;
+    }
+
+    /* Adjust title font size */
+    .title {
+        font-size: 1.2rem;
+    }
+
+    /* Adjust question container padding and font size */
+    .question-container {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+
+    /* Question text font size */
+    .question {
+        font-size: 1rem;
+    }
+
+    /* Option button adjustments */
+    .options .option {
+        padding: 10px 18px;
+        font-size: 0.9rem;
+    }
+
+    /* Progress bar container adjustments */
+    .progress-container {
+        max-width: 100%;
+    }
+
+    /* Progress bar height */
+    progress {
+        height: 12px;
+    }
+
+    /* Feedback text font size */
+    .feedback {
+        font-size: 1rem;
+    }
+
+    /* Button adjustments */
+    .button-container .button {
+        padding: 10px 22px;
+        font-size: 0.95rem;
+    }
+
+    /* Score font size */
+    .score {
+        font-size: 0.95rem;
+    }
+}
