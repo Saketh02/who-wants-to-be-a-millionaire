@@ -1,0 +1,20 @@
+What is the capital of France?|A) Berlin|B) Madrid|C) Paris|D) Rome|C
+What is the largest planet in our solar system?|A) Earth|B) Mars|C) Jupiter|D) Saturn|C
+Which element has the chemical symbol 'O'?|A) Gold|B) Oxygen|C) Silver|D) Helium|B
+What is the hardest natural substance on Earth?|A) Diamond|B) Gold|C) Iron|D) Quartz|A
+Who wrote 'Romeo and Juliet'?|A) Charles Dickens|B) William Shakespeare|C) Mark Twain|D) J.K. Rowling|B
+What is the smallest prime number?|A) 0|B) 1|C) 2|D) 3|C
+Which gas is most abundant in the Earth's atmosphere?|A) Oxygen|B) Carbon Dioxide|C) Nitrogen|D) Hydrogen|C
+What is the main ingredient in guacamole?|A) Tomato|B) Avocado|C) Onion|D) Pepper|B
+Who painted the Mona Lisa?|A) Vincent Van Gogh|B) Pablo Picasso|C) Leonardo da Vinci|D) Claude Monet|C
+What is the largest ocean on Earth?|A) Indian Ocean|B) Atlantic Ocean|C) Arctic Ocean|D) Pacific Ocean|D
+What is the chemical formula for water?|A) CO2|B) H2O|C) O2|D) H2|B
+In which year did the Titanic sink?|A) 1905|B) 1912|C) 1915|D) 1920|B
+Which planet is known as the Red Planet?|A) Earth|B) Venus|C) Mars|D) Jupiter|C
+What is the capital of Japan?|A) Beijing|B) Seoul|C) Tokyo|D) Bangkok|C
+Which instrument measures atmospheric pressure?|A) Thermometer|B) Barometer|C) Hygrometer|D) Altimeter|B
+What is the longest river in the world?|A) Amazon|B) Nile|C) Yangtze|D) Mississippi|B
+What is the powerhouse of the cell?|A) Nucleus|B) Ribosome|C) Mitochondria|D) Endoplasmic Reticulum|C
+What is the main language spoken in Brazil?|A) Spanish|B) Portuguese|C) French|D) English|B
+What is the square root of 144?|A) 10|B) 12|C) 14|D) 16|B
+Who discovered penicillin?|A) Marie Curie|B) Alexander Fleming|C) Louis Pasteur|D) Albert Einstein|B
