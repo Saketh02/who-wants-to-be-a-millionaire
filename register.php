@@ -35,15 +35,15 @@
                             $userExists = true;
                             $error = "Username already taken.";
                             break;
-                        }
-                        if ($email === $savedEmail) {
+                        } elseif ($email === $savedEmail) {
                             $emailExists = true;
+                            $error = "Email already exists. Login Below !!";
                             break;
                         }
                     }
                 }
 
-                if ($userExists) {
+                if ($userExists || $emailExists) {
                     echo "<p class='error'>$error</p>";
                 } elseif ($emailExists) {
                     header("Location: login.php?message=" . urlencode("You already have an account, login here."));
@@ -56,12 +56,9 @@
                     exit();
                 }
             }
-
-            if ($error) {
-                echo "<p class='error'>$error</p>";
-            }
         }
         ?>
+
         <form method="POST" action="">
             <label for="username">Username:</label>
             <input type="text" name="username" id="username" required>
@@ -73,6 +70,7 @@
             <input type="password" name="password" id="password" required>
 
             <button type="submit" class="button animate">Register</button>
+            <p>Don't have an account? <a href="login.php" class="register">Login here</a></p>
         </form>
     </div>
 </body>
