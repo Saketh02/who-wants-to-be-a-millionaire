@@ -92,6 +92,11 @@
                 <li>That's all, Questions will be displayed, and you must pick the right answer</li>
                 <li>You can see your leaderboard as well and improve your earnings if you wish to</li>
             </ul><br>
+            <h3>Rules</h2>
+            <ul>
+                <li>Note that you can select the option only once</li>
+                <li>You cannot go to the previous question</li>
+            </ul>
             <div class="close">
                 <a href="#" class="close-btn">Close</a>
             </div>
