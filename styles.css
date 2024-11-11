@@ -208,3 +208,162 @@ input:focus {
         font-size: 0.95rem;
     }
 }
+
+/* Media query for screens larger than 4000px */
+@media (min-width: 4000px) {
+    /* General Styles */
+    * { 
+        margin: 0; 
+        padding: 0; 
+        box-sizing: border-box; 
+    }
+    body { 
+        font-family: Arial, sans-serif; 
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        height: 100vh; 
+        color: #f0f8ff; 
+        font-size: 24px; /* Increase body font size for better readability */
+    }
+    .container { 
+        background-color: rgba(255, 255, 255, 0.1); 
+        border-radius: 15px; 
+        padding: 120px 180px; /* Increased padding */
+        width: 900px; /* Increased container width */
+        text-align: center; 
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+        transition: transform 0.3s ease; 
+    }
+    .container:hover { 
+        transform: scale(1.1); /* Slightly stronger hover effect */
+    }
+
+    .title { 
+        font-size: 5rem; /* Increase title size */
+        margin-bottom: 50px;
+        color: #00d1b2; 
+        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4); /* Larger text-shadow */
+        animation: glow 1.5s ease-in-out infinite alternate; 
+    }
+
+    .button-container { 
+        display: flex; 
+        justify-content: space-evenly;
+        gap: 30px; /* Increased gap */
+        margin-top: 40px; 
+    }
+
+    .button { 
+        text-decoration: none; 
+        margin: 30px;
+        padding: 40px 80px; /* Increased padding */
+        font-weight: bold; 
+        font-size: 2rem; /* Larger font size of buttons */
+        border-radius: 60px; /* Increased border-radius */
+        transition: background-color 0.3s ease, transform 0.3s ease; 
+    }
+
+    .button.animate { 
+        background: linear-gradient(135deg, #203a43, #2c5364); 
+        color: #fff; 
+        border: 2px solid #00d1b2; 
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+    }
+    .button.animate:hover { 
+        background: #00d1b2; 
+        color: #333; 
+        transform: translateY(-7px); /* Stronger hover effect */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); 
+    }
+
+    /* Success and Error Messages */
+    .success { 
+        color: #00ff7f; 
+        font-weight: bold; 
+        margin-top: 30px; /* Increased margin */
+        animation: fadeIn 1s; 
+        font-size: 1.8rem; /* Larger font size for success message */
+    }
+
+    /* Animations */
+    @keyframes glow { 
+        from { text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4), 0 0 12px #00d1b2, 0 0 20px #00d1b2; } 
+        to { text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4), 0 0 16px #00d1b2, 0 0 30px #00d1b2; } 
+    }
+
+    @keyframes fadeIn { 
+        from { opacity: 0; } 
+        to { opacity: 1; } 
+    }
+
+    /* Input Fields */
+    label { 
+        display: block; 
+        margin-top: 20px; 
+        font-weight: bold; 
+        color: #f0f8ff; 
+    }
+
+    input { 
+        width: 100%; 
+        padding: 25px; /* Increased padding */
+        margin-top: 8px; 
+        border: 2px solid #00d1b2; 
+        border-radius: 10px; /* Slightly increased border-radius */
+        color: #fff; 
+        font-size: 1.8rem; /* Larger font size */
+        transition: background-color 0.3s ease; 
+        background-color: rgba(255, 255, 255, 0.1); 
+    }
+    input:focus { 
+        background-color: rgba(255, 255, 255, 0.1); 
+        outline: none; 
+        border-color: #f0f8ff; 
+    }
+
+    .register {
+        color: #00d1b2;
+        text-decoration: none;
+        font-size: 1.8rem; /* Larger font size */
+    }
+
+    .logo {
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        width: 300px; /* Larger logo size */
+        height: auto;
+    }
+
+    .score-board {
+        position: absolute;
+        right: 30px;
+        top: 70px;
+        background-color: rgba(255, 255, 255, 0.2);
+        padding: 60px;
+        border-radius: 12px; /* Slightly rounded corners */
+        width: 500px; /* Increased score board width */
+        text-align: left;
+        color: #f0f8ff;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+    .score-board h2 {
+        color: #00d1b2;
+        font-size: 2.5rem; /* Larger font size for score board title */
+        margin-bottom: 12px;
+    }
+
+    .logout {
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        font-size: 1.6rem; /* Larger font size */
+    }
+
+    /* Optional smaller screen styles */
+    @media (max-width: 881px) {
+        /* Same as earlier styles */
+    }
+}
