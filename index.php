@@ -80,18 +80,22 @@
 
     <!-- Modal Structure -->
     <div id="instructions-modal" class="modal">
-        <div class="modal-content">
+    <div class="modal-content">
             <h2>Instructions</h2>
-            <p>Welcome to "Who Wants to Be a Millionaire". Follow these instructions carefully:</p>
+            <p>
+                Who Wants to be a Millionaire is a popular game show where contestants answer a series of multiple-choice questions to win increasing amounts of money, with the final goal being a million or more dollars.
+            </p><br>
+            <h3>How to play the game ??</h2>
             <ul>
-                <li>Answer questions to the best of your knowledge.</li>
-                <li>Each question has multiple choices; choose the correct one.</li>
-                <li>You can use lifelines to help with difficult questions.</li>
-            </ul>
+                <li>Create an Account</li>
+                <li>Login from the Login page and Click Start</li>
+                <li>That's all, Questions will be displayed, and you must pick the right answer</li>
+                <li>You can see your leaderboard as well and improve your earnings if you wish to</li>
+            </ul><br>
             <div class="close">
                 <a href="#" class="close-btn">Close</a>
             </div>
-            
+
         </div>
     </div>
 </body>
